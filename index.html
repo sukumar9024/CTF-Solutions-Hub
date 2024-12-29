@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CTF Solutions and Approaches">
+    <title>CTF Solutions Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #1f1f1f;
+            color: #e0e0e0;
+            text-align: center;
+            padding: 2rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        section {
+            padding: 3rem 2rem;
+            flex: 1;
+        }
+        .intro-text {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .ctf-section {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+            row-gap: 2rem;
+        }
+        .ctf-card {
+            background-color: #2c2c2c;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            width: 280px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        .ctf-card:hover {
+            background-color: #383838;
+        }
+        .ctf-card h3 {
+            color: #f39c12;
+            font-size: 1.5rem;
+        }
+        .ctf-card p {
+            color: #bbb;
+            margin-bottom: 1rem;
+        }
+        .cta-button {
+            background-color: #f39c12;
+            color: #121212;
+            padding: 0.5rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #e67e22;
+        }
+        footer {
+            background-color: #1f1f1f;
+            color: #e0e0e0;
+            text-align: center;
+            padding: 1.5rem;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .ctf-section {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CTF Solutions Hub</h1>
+        <p>Your Guide to Solving Capture The Flag Challenges</p>
+    </header>
+
+    <section>
+        <div class="intro-text">
+            <h2>Welcome to the CTF Solutions Hub</h2>
+            <p>Explore our collection of CTF solutions, approaches, and techniques to enhance your problem-solving skills and stay ahead in the cybersecurity field.</p>
+        </div>
+
+        <div class="ctf-section">
+            <div class="ctf-card">
+                <h3>Web Exploitation</h3>
+                <p>Learn to identify and exploit vulnerabilities in web applications such as SQL Injection, XSS, and more.</p>
+                <a href="./categories/web_exploitation.html" class="cta-button">Explore Web Challenges</a>
+            </div>
+            <div class="ctf-card">
+                <h3>Cryptography</h3>
+                <p>Understand encryption methods, cracking ciphers, and solving cryptography puzzles in CTFs.</p>
+                <a href="#" class="cta-button">Explore Cryptography Challenges</a>
+            </div>
+            <div class="ctf-card">
+                <h3>General Skills</h3>
+                <p>Develop a strong foundation in general cybersecurity skills such as networking, OSINT, and more.</p>
+                <a href="#" class="cta-button">Explore General Skills</a>
+            </div>
+            <div class="ctf-card">
+                <h3>Forensics</h3>
+                <p>Master forensic techniques to analyze evidence and solve CTF challenges related to data recovery and investigation.</p>
+                <a href="#" class="cta-button">Explore Forensics Challenges</a>
+            </div>
+            <div class="ctf-card">
+                <h3>Reverse Engineering</h3>
+                <p>Learn how to analyze binaries, decompile code, and uncover hidden vulnerabilities in reverse engineering challenges.</p>
+                <a href="#" class="cta-button">Explore Reverse Engineering</a>
+            </div>
+            <div class="ctf-card">
+                <h3>Binary Exploitation</h3>
+                <p>Get hands-on with binary exploitation, buffer overflows, and security loopholes in binary challenges.</p>
+                <a href="#" class="cta-button">Explore Binary Challenges</a>
+            </div>
+        </div>
+
+        <div class="intro-text">
+            <p>If you're new to CTFs or looking to sharpen your skills, this platform is designed to help you at every level. Dive in and start solving challenges!</p>
+        </div>
+
+        <div class="intro-text">
+            <a href="#view-ctfs" class="cta-button">View CTF Challenges</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CTF Solutions Hub | Designed for Cybersecurity Enthusiasts</p>
+    </footer>
+</body>
+</html>
